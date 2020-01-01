@@ -1,0 +1,32 @@
+{
+  "name": "recipe-bot",
+  "version": "1.0.0",
+  "description": "A Telegram bot for recipes",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JosemyDuarte/recipe-bot.git"
+  },
+  "keywords": [
+    "Telegram",
+    "Bot",
+    "Recipe"
+  ],
+  "author": "Josemy Duarte",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/JosemyDuarte/recipe-bot/issues"
+  },
+  "homepage": "https://github.com/JosemyDuarte/recipe-bot#readme",
+  "devDependencies": {
+    "serverless": "^1.60.4",
+    "serverless-offline": "^5.12.1"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "telegraf": "^3.35.0"
+  }
+}

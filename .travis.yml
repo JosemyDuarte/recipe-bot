@@ -1,0 +1,21 @@
+sudo: required
+
+language: node_js
+node_js:
+  - 12
+
+services:
+  - docker
+
+before_install:
+  - docker --version
+  - echo "ENV GIT_SHA ${TRAVIS_COMMIT}" >> Dockerfile
+  - docker build -t josemyduarte/recipe-bot .
+  - docker run -d --name recipe-bot -p 80:80 josemyduarte/recipe-bot
+
+script:
+  - docker ps | grep -q recipe-bot
+  - curl "localhost/hi"
+
+after_script:
+  - docker rm -f recipe-bot
