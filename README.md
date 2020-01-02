@@ -14,7 +14,7 @@ The main thing you will require is a Telegram Bot Token. Once you have that and 
 
 `docker build --rm -f "Dockerfile" -t recipebot:latest "."`
 
-And run the Serverless Server 😉:
+And run the Serverless Server 😎:
 
 `docker run -e TELEGRAM_TOKEN=<YOUR_TELEGRAM_TOKEN> -it --rm -p 80:80 recipebot`
 
