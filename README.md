@@ -1,10 +1,11 @@
 # Recipe Bot
 
-There is a bot for everything, and this is a bot for recipes. It was build making use of [Serverless Framework CLI](https://serverless.com/framework/docs/getting-started/). Why? Just for fun 😉
+There's a bot for everything, and this is a bot to easily find new recipes. It was build by making use of the [Serverless Framework CLI](https://serverless.com/framework/docs/getting-started/). Why? Just for fun 😉
 
-## How it works?
+## How does it works?
 
-First, just start a conversation with the bot with a `/start` command/message. After that just send a message like `/recipe [Ingredient1, ingredient2 ...]`. 
+1. Start a conversation with the bot with a `/start` command/message. 
+2. Send a message like `/recipe [ingredient1, ingredient2, ...]`. 
 
 ![screenshot](./TelegramScreenshot.png)
 
